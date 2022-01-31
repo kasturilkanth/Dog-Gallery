@@ -10,7 +10,7 @@ function MoreImage({clickedDog}){
                 // console.log(data.message);
                 setMoreImg(data.message);
             })
-    }, [])
+    }, [clickedDog])
     return(
         <div className="more-image-card">
             <h4>More Images</h4>

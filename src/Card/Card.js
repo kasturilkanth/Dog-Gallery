@@ -10,11 +10,11 @@ function Card({ name,handleClickedPopup,selectedDog}) {
                 // console.log(data.message);
                 setImg(data.message);
             })
-        }, [])
+        }, [name])
     
     return (
         <div className="card" onClick={()=>handleClickedPopup(selectedDog)}>
-          <img src={img} alt="dog-photo" />
+          <img src={img} alt="dog" />
            <h4>{name}</h4>
         </div>
     )

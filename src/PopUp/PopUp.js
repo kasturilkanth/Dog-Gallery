@@ -13,7 +13,7 @@ function PopUp({handleClose,clickedDog,names}) {
                 // console.log(data.message);
                setSubBreedName(data.message);
             })
-    }, [])
+    }, [clickedDog])
     
     return (
         <>

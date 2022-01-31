@@ -12,7 +12,7 @@ function SubBreed({subName,clickedDog}) {
                 // console.log(data);
                 setSubBreedImg(data.message);
             })
-    }, [])
+    }, [clickedDog,subName])
   return (
   
       <div className="sub-breed-card">

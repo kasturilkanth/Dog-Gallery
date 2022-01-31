@@ -42,7 +42,7 @@ return (
     <NavBar names={names}/>
     
     <SearchBar handleChange={handleChange}/>
-    <CardList names={names,filteredName} handleClickedPopup={handleClickedPopup} />
+    <CardList names={names} names={filteredName} handleClickedPopup={handleClickedPopup} />
    
     </>
     );
