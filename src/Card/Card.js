@@ -13,9 +13,11 @@ function Card({ name,handleClickedPopup,selectedDog}) {
         }, [name])
     
     return (
+        <div className='card-cont'>
         <div className="card" onClick={()=>handleClickedPopup(selectedDog)}>
           <img src={img} alt="dog" />
            <h4>{name}</h4>
+        </div>
         </div>
     )
 }
