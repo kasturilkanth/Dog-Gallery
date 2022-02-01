@@ -2,9 +2,9 @@ import Card from "./Card";
 
 function CardList({names,handleClickedPopup}){
     return(
-       names.map((name)=>{
+       names.map((name,i)=>{
 
-           return <Card name={name}  selectedDog={name} handleClickedPopup={handleClickedPopup}/>
+           return <Card key={i} name={name}  selectedDog={name} handleClickedPopup={handleClickedPopup}/>
        })
     )
 }
